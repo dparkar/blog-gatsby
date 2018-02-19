@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/dparkar.github.io`,
+  pathPrefix: `/blog-gatsby`,
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
