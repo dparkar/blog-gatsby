@@ -16,9 +16,9 @@ export default function Template({
       { name: 'og:type', content: 'website'},
       { name: 'og:site_name', content: 'dplogs'},
       { name: 'og:image', content: data.image},
-      { name: 'og:image:alt', content: data.image-alt},
-      { name: 'og:image:width', content: data.image-width},
-      { name: 'og:image:height', content: data.image-height},
+      { name: 'og:image:alt', content: data.image_alt},
+      { name: 'og:image:width', content: data.image_width},
+      { name: 'og:image:height', content: data.image_height},
       { name: 'fb:app_id', content: '367989410291145'},
       { name: 'twitter:card', content: 'summary'},
       { name: 'twitter:creator', content: '@dparkar'}]} />
@@ -40,6 +40,12 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        keywords
+        description
+        image
+        image_alt
+        image_width
+        image_height
       }
     }
   }
