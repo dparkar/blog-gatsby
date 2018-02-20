@@ -9,16 +9,16 @@ export default function Template({
     <div className="blog-post-container">
      <Helmet 
      meta={[
-      { name: 'keywords', content: data.keywords },
-      { name: 'og:title', content: 'dp | ' + data.title},
-      { name: 'og:url', content: 'https://dparkar.github.io/blog-gatsby' + data.path},
-      { name: 'og:description', content: data.description},
+      { name: 'keywords', content: post.frontmatter.keywords },
+      { name: 'og:title', content: 'dp | ' + post.frontmatter.title},
+      { name: 'og:url', content: 'https://dparkar.github.io/blog-gatsby' + post.frontmatter.path},
+      { name: 'og:description', content: post.frontmatter.description},
       { name: 'og:type', content: 'website'},
       { name: 'og:site_name', content: 'dplogs'},
-      { name: 'og:image', content: data.image},
-      { name: 'og:image:alt', content: data.image_alt},
-      { name: 'og:image:width', content: data.image_width},
-      { name: 'og:image:height', content: data.image_height},
+      { name: 'og:image', content: post.frontmatter.image_url},
+      { name: 'og:image:alt', content: post.frontmatter.image_alt},
+      { name: 'og:image:width', content: post.frontmatter.image_width},
+      { name: 'og:image:height', content: post.frontmatter.image_height},
       { name: 'fb:app_id', content: '367989410291145'},
       { name: 'twitter:card', content: 'summary'},
       { name: 'twitter:creator', content: '@dparkar'}]} />
@@ -42,7 +42,7 @@ export const pageQuery = graphql`
         title
         keywords
         description
-        image
+        image_url
         image_alt
         image_width
         image_height
