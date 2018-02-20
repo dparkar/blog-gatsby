@@ -7,7 +7,8 @@ export default function Template({
   const post = data.markdownRemark; 
   return (
     <div className="blog-post-container">
-     <Helmet title={post.frontmatter.title} />
+     <Helmet title={`dp | ${post.frontmatter.title}`} >
+     </Helmet>
       <div className="blog-post">
         <div
           className="blog-post-content"

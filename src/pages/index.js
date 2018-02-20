@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
+
 import '../styles/log-listing.css';
 
 export default function Index({ data }) {
@@ -8,9 +9,8 @@ export default function Index({ data }) {
   return (
     <div className="blog-posts">
     <Helmet
-      title="Gatsby Default Starter"
       meta={[
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'keywords', content: 'artificial-intelligence, robotics, distributed-systems' },
         { name: 'og:title', content: 'logs | dhawal parkar'},
         { name: 'og:url', content: 'https://dparkar.github.io/blog-gatsby/'},
         { name: 'og:description', content: 'Artificial Intelligence and Robotics'},
@@ -50,7 +50,7 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "dddd MMMM DD YYYY hh:mm:ss A")
             path
           }
         }
