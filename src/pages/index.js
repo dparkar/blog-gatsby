@@ -11,7 +11,7 @@ export default function Index({ data }) {
     <Helmet
       meta={[
         { name: 'keywords', content: 'artificial-intelligence, robotics, distributed-systems' },
-        { name: 'og:title', content: 'logs | dhawal parkar'},
+        { name: 'og:title', content: 'dhawal parkar | logs'},
         { name: 'og:url', content: 'https://dparkar.github.io/blog-gatsby/'},
         { name: 'og:description', content: 'Artificial Intelligence and Robotics'},
         { name: 'og:type', content: 'website'},
