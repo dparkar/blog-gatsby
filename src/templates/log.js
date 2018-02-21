@@ -23,6 +23,7 @@ export default function Template({
       { name: 'twitter:card', content: 'summary'},
       { name: 'twitter:creator', content: '@dparkar'}]} />
       <div className="blog-post">
+        <h1>{post.frontmatter.title}</h1>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
