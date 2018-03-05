@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          dhawal parkar logs ...
+          dhawal parkar logs
         </Link>
       </h1>
     </div>

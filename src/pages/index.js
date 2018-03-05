@@ -24,6 +24,7 @@ export default function Index({ data }) {
         { name: 'twitter:card', content: 'summary'},
         { name: 'twitter:creator', content: '@dparkar'}
       ]}
+      title='dp | logs'
     />
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)

@@ -21,7 +21,8 @@ export default function Template({
       { name: 'og:image:height', content: post.frontmatter.image_height},
       { name: 'fb:app_id', content: '367989410291145'},
       { name: 'twitter:card', content: 'summary'},
-      { name: 'twitter:creator', content: '@dparkar'}]} />
+      { name: 'twitter:creator', content: '@dparkar'}]} 
+      title={'dp | ' + post.frontmatter.title} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         <div
